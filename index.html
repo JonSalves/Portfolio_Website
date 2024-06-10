@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jonathan Gonsalves</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media_queries.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <nav id="desktop_nav">
+      <div class="logo">Jonathan Gonsalves</div>
+      <div>
+        <ul class="nav_links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav id="hamburger_nav">
+      <div class="logo">Jonathan Gonsalves</div>
+      <div class="hamburger_menu">
+        <div class="hamburger_icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu_links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <section id="profile">
+      <div class="section_pic_container">
+        <img src="./Assets/profile-pic.png" alt="Jon Doe Profile Pic" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello I am</p>
+        <h1>Jonathan Gonsalves</h1>
+        <p class="section__text__p2">Front End Developer</p>
+        <div class="btn_container">
+          <button
+            class="btn btn_color_2"
+            onclick="window.open('Assets/resume-example.pdf')"
+          >
+            Open CV
+          </button>
+          <button class="btn btn_color_1" onclick="location.href='./#contact'">
+            Contact
+          </button>
+        </div>
+        <div id="socials_container">
+          <img
+            src="./Assets/linkedin.png"
+            alt="My Linkedin Profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/jonathan-gonsalves-2793aa163/'"
+          />
+          <img
+            src="./Assets/github.png"
+            alt="My Github Profile"
+            class="icon"
+            onclick="location.href='https://github.com/JonSalves'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section_container">
+        <div class="section_pic_container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about_pic"
+          />
+        </div>
+        <div class="about_details_container">
+          <div class="about_containers">
+            <div class="details_container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p><br /></p>
+            </div>
+            <div class="details_container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>
+                12 Weeks Software Development Bootcamp(JustIT)<br />4 Weeks
+                Digital Skills Bootcamp(JustIT)
+              </p>
+            </div>
+          </div>
+          <div class="text_container">
+            <p>
+              Developed a keen interest in programming during my GCSEs. Attended
+              university, where I honed my analytical skills and realized my
+              true passion for programming, despite not studying it formally.
+              Decided to leave university to pursue my passion for programming,
+              dedicating myself to continuous learning and practical application
+              in the field. I have currently just learned HTML, JS, CSS, SQL and
+              Python through 12 weeks intensive bootcamp to help get me with the
+              skills required to start in a role of a junior software developer.
+              I have created a few project that highlight my programming skills
+              such as building a wordle clone or cloning the discord homepage
+              using JavaScript, CSS and HTML.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1"></p>
+      <h1 class="title">Experience</h1>
+      <div class="experience_details_container">
+        <div class="about_containers">
+          <div class="details_container">
+            <h2 class="experience_sub_title">Frontend Developer</h2>
+            <div class="article_container">
+              <article class="gap">
+                <img
+                  src="./Assets/HTML.png"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article class="gap">
+                <img
+                  src="./Assets/Css.png"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article class="gap">
+                <img
+                  src="./Assets/JS.png"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details_container">
+            <h2 class="experience_sub_title">Backend Developer</h2>
+            <div class="article_container">
+              <article class="gap">
+                <img
+                  src="./Assets/Python.png"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article class="gap">
+                <img
+                  src="./Assets/JS.png"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article class="gap">
+                <img
+                  src="./Assets/pngegg.png"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SQL</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="excperience_details_container">
+        <div class="about_containers">
+          <div class="details_container color_container">
+            <div class="article_container">
+              <img
+                src="./Assets/project-1.png"
+                alt="Project 1"
+                class="project_img"
+              />
+            </div>
+            <h2 class="experience_sub_title project_title">Project 1</h2>
+            <div class="btn_container">
+              <button
+                class="btn btn_color_2 project_btn"
+                onclick="location.href='https.github.com'"
+              >
+                Github
+              </button>
+            </div>
+            <div class="btn_container">
+              <button
+                class="btn btn_color_2 project_btn"
+                onclick="location.href='https.github.com'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details_container color_container">
+            <div class="article_container">
+              <img
+                src="./Assets/project-2.png"
+                alt="Project 2"
+                class="project_img"
+              />
+            </div>
+            <h2 class="experience_sub_title project_title">Project 2</h2>
+            <div class="btn_container">
+              <button
+                class="btn btn_color_2 project_btn"
+                onclick="location.href='https.github.com'"
+              >
+                Github
+              </button>
+            </div>
+            <div class="btn_container">
+              <button
+                class="btn btn_color_2 project_btn"
+                onclick="location.href='https.github.com'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details_container color_container">
+            <div class="article_container">
+              <img
+                src="./Assets/project-3.png"
+                alt="Project 3"
+                class="project_img"
+              />
+            </div>
+            <h2 class="experience_sub_title project_title">Project 3</h2>
+            <div class="btn_container">
+              <button
+                class="btn btn_color_2 project_btn"
+                onclick="location.href='https.github.com'"
+              >
+                Github
+              </button>
+            </div>
+            <div class="btn_container">
+              <button
+                class="btn btn_color_2 project_btn"
+                onclick="location.href='https.github.com'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+
+  <section id="contact">
+    <p class="section__text__p1">Get In Touch</p>
+    <h1 class="title"> Contact Me</h1>
+    <div class="contact_info_upper_container">
+      <div class="contact_info_container">
+        <img src="./Assets/email.png" alt="email icon" class="icon contact_icon email_icon">
+        <p><a href="mailto:jonathangonsalves301@gmail.com">jonathangonsalves301@gmail.com</a></p>
+      </div>
+      <div class="contact_info_container">
+        <img src="./Assets/linkedin.png" alt="linkedin icon" class="icon contact_icon">
+        <p><a href="https://www.linkedin.com/in/jonathan-gonsalves-2793aa163/">LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+<footer>
+  <nav>
+    <div class="nav_links_container">
+      <ul class="nav_links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <p>copyright &#169; 2024 Jonathan Gonsalves. All Rights Reserved</p>
+</footer>
+  </body>
+</html>
