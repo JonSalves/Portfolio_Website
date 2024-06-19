@@ -163,6 +163,10 @@ section{
 
 }
 
+.profile_pic{
+    border-radius: 2rem;
+}
+
 .section_pic_container{
     display: flex;
     height: 400px;
